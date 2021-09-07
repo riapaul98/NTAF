@@ -84,7 +84,7 @@
   width: 220px;
   height: 55px;
   /* font-family: "Roboto", sans-serif; */
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 2.5px;
   font-weight: 390;
   /* text-transform: uppercase; */
@@ -104,4 +104,67 @@
   background-color: #fff;
   border: 1px solid #0b97c2;
   font-weight: 500;
+}
+
+/* #login-body{
+  background-image: url('images/istockphoto-668349952-170667a.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.loginButton{
+  width: 170px;
+  height: 45px;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  font-weight: 390;
+  /* text-transform: uppercase; */
+  color: #fff;
+  background-color: #066cc0;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 15px 20px #05488367;
+  transition: all 0.3s ease 0s;
+  /* cursor: pointer; */
+  outline: none;
+  transform: scale(0.9);
+}
+.loginButton:hover {
+  transform: scale(1);
+  color: #066cc0;
+  background-color: #fff;
+  /* border: 1px solid #066cc0; */
+  font-weight: 500;
+}
+.login-main-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 350px;
+  /* backdrop-filter: blur(5px); */
+}
+
+.login-main-row {
+  min-height: 350px;
+}
+
+.login-right-col{
+  position: relative;
+  box-shadow: 0px 10px 18px #0d539167;
+}
+.login-left-col{
+  background: #184494;
+  /* border-radius: 10px;
+  box-shadow: 0px 15px 20px #0d539167; */
+}
+.login-left-col h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-right-cont {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
