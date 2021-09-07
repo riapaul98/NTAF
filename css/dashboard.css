@@ -1,0 +1,173 @@
+.current-page {
+  /* color:black; */
+  transform: scale(1.2);
+  font-weight: 500;
+  color: white;
+  background: rgb(121, 140, 194);
+}
+.nav-bgcolor {
+  background-color: #184494;
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  transform: scale(0.9);
+} 
+
+.zoom:hover {
+  transform: scale(1.2);
+  background: rgb(104, 124, 180);
+}
+.alertText-custom {
+  background: rgb(255, 193, 193);
+}
+.table1-custom {
+  background: rgb(201, 214, 248);
+  /* background-color: #96e1f8; */
+  border-radius: 15px;
+  box-shadow: 0px 7px 7px #0d539167;
+  /* transition: all 0.3s ease 0s; */
+}
+
+.parent {
+  display: flex;
+}
+#text{
+  overflow: hidden;
+}
+.alertIcon:last-child {
+  margin-left: 20px;
+}
+
+.alertButton {
+  /* width: 220px;
+  height: 55px; */
+  /* font-family: "Roboto", sans-serif; */
+  /* font-size: 17px;
+  letter-spacing: 2.5px;
+  font-weight: 390; */
+  /* text-transform: uppercase; */
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0px 15px 20px #910d0d67;
+  transition: all 0.3s ease 0s;
+  /* cursor: pointer; */
+  outline: none;
+  transform: scale(0.9);
+}
+.alertButton:hover {
+  transform: scale(1.1);
+  color: red;
+  background-color: #fff;
+  /* border: 1px solid red; */
+  /* font-weight: 500; */
+}
+.expandButton {
+  color: #fff;
+  background-color: #184494;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px #0d539167;
+  transition: all 0.3s ease 0s;
+  /* cursor: pointer; */
+  outline: none;
+  transform: scale(0.9);
+}
+.expandButton:hover {
+  transform: scale(1.1);
+  color: #184494;
+  background-color: #fff;
+  /* border: 1px solid red; */
+  /* font-weight: 500; */
+}
+
+.testButton {
+  width: 220px;
+  height: 55px;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 16px;
+  letter-spacing: 2.5px;
+  font-weight: 390;
+  /* text-transform: uppercase; */
+  color: #fff;
+  background-color: #0b97c2;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 15px 20px #0d539167;
+  transition: all 0.3s ease 0s;
+  /* cursor: pointer; */
+  outline: none;
+  transform: scale(0.9);
+}
+.testButton:hover {
+  transform: scale(1);
+  color: #0b97c2;
+  background-color: #fff;
+  border: 1px solid #0b97c2;
+  font-weight: 500;
+}
+
+/* #login-body{
+  background-image: url('images/istockphoto-668349952-170667a.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.loginButton{
+  width: 170px;
+  height: 45px;
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  font-weight: 390;
+  /* text-transform: uppercase; */
+  color: #fff;
+  background-color: #066cc0;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 15px 20px #05488367;
+  transition: all 0.3s ease 0s;
+  /* cursor: pointer; */
+  outline: none;
+  transform: scale(0.9);
+}
+.loginButton:hover {
+  transform: scale(1);
+  color: #066cc0;
+  background-color: #fff;
+  /* border: 1px solid #066cc0; */
+  font-weight: 500;
+}
+.login-main-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 350px;
+  /* backdrop-filter: blur(5px); */
+}
+
+.login-main-row {
+  min-height: 350px;
+}
+
+.login-right-col{
+  position: relative;
+  box-shadow: 0px 10px 18px #0d539167;
+}
+.login-left-col{
+  background: #184494;
+  /* border-radius: 10px;
+  box-shadow: 0px 15px 20px #0d539167; */
+}
+.login-left-col h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-right-cont {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
