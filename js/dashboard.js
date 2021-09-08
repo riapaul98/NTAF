@@ -1,3 +1,5 @@
+// alert button script
+
 function myFunc() {
     var x = document.getElementById("text");
     if (x.style.display === "none") {
