@@ -1,10 +1,8 @@
 .current-page {
-  /* color:black; */
   transform: scale(1.2);
   font-weight: 500;
-  color: white;
-  background: #2576b4;
 }
+
 .nav-bgcolor {
   background-color: #184494;
 }
@@ -12,15 +10,14 @@
 .zoom {
   transition: transform 0.2s; /* Animation */
   transform: scale(0.9);
+  color: white;
 }
 
 .zoom:hover {
   transform: scale(1.2);
-  background: #2576b4;
+  /* background: #2576b4; */
 }
-.alertText-custom {
-  background: rgb(255, 193, 193);
-}
+
 .table1-custom {
   background: rgb(201, 214, 248);
   /* background-color: #96e1f8; */
@@ -29,21 +26,16 @@
   /* transition: all 0.3s ease 0s; */
 }
 
-.pos-logo {
-  position: fixed;  
-  top: 680px;  
+.footer {
+  
+  position: fixed;
+  
+  top: 570px;
   right: 0px;
-}
-
-.parent {
-  display: flex;
 }
 
 #text {
   overflow: hidden;
-}
-.alertIcon:last-child {
-  margin-left: 20px;
 }
 
 .alertButton {
@@ -219,14 +211,14 @@
     letter-spacing: 2.5px;
     font-weight: 420;
   }
-  .card-robot-custom{
+  .card-robot-custom {
     transform: scale(0.9);
   }
   .card-robot-custom:hover {
     transform: scale(1);
     z-index: 1; /* the gui status was getting on top of robot status on hover, so increased the z-index of robot status */
   }
-  .card-gui-custom{
+  .card-gui-custom {
     transform: scale(0.9);
   }
   .card-gui-custom:hover {

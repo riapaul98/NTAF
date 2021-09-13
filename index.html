@@ -25,7 +25,7 @@
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark nav-bgcolor">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bolder fs-2" href="index.html">NTAF</a>
+        <a class="navbar-brand fw-bolder fs-3" href="index.html">NTAF</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,27 +34,30 @@
             class="collapse navbar-collapse nav-bgcolor py-2"
             id="navbarSupportedContent"
           > -->
-        <div class="collapse navbar-collapse py-2" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item mx-3">
-              <a class="nav-link current-page" aria-current="page" href="#">
-                <i class="fa fa-line-chart text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              <a class="nav-link" aria-current="page" href="#">
+                <i class="fa fa-line-chart current-page" data-bs-toggle="tooltip" data-bs-placement="bottom"
                   title="Dashboard" style="font-size: 25px"></i>
               </a>
+              <p class="text-white" style="font-size: smaller;">Dashboard</p>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link zoom" href="test.html">
-                <i class="fa fa-sliders text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              <a class="nav-link" href="test.html">
+                <i class="fa fa-sliders zoom" data-bs-toggle="tooltip" data-bs-placement="bottom"
                   title="Test Management" style="font-size: 25px"></i>
               </a>
+              <p class="text-white" style="font-size: smaller;">Test Management</p>
             </li>
             <li class="nav-item mx-3 dropdown">
-              <a class="nav-link dropdown-toggle zoom" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-desktop text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  title="Monitoring" style="font-size: 25px"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa fa-desktop zoom" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Monitoring"
+                  style="font-size: 25px"></i>
               </a>
+              <p class="text-white" style="font-size: smaller;">Monitoring</p>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="monitoring/execution.html">Execution</a>
@@ -76,11 +79,12 @@
               </ul>
             </li>
             <li class="nav-item mx-3 dropdown">
-              <a class="nav-link dropdown-toggle zoom" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-cog text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  title="Configuration" style="font-size: 25px"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa fa-cog zoom" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Configuration"
+                  style="font-size: 25px"></i>
               </a>
+              <p class="text-white" style="font-size: smaller;">Configuration</p>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="configuration/uepc-config.html">UE PC Configuration</a>
@@ -91,39 +95,55 @@
               </ul>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link zoom" href="test-scheduler.html">
-                <i class="fa fa-sliders text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              <a class="nav-link" href="test-scheduler.html">
+                <i class="fa fa-sliders zoom" data-bs-toggle="tooltip" data-bs-placement="bottom"
                   title="Test Case Handler" style="font-size: 25px"></i>
               </a>
+              <p class="text-white" style="font-size: smaller;">Test Case Handler</p>
             </li>
           </ul>
-          <!--digital clock start-->
-          <div class="datetime">
-            <div class="date">
-              <span id="dayname">Day</span>,
-              <span id="daynum">00</span>/
-              <span id="month">Month</span>/
-              <span id="year">Year</span>
-            </div>
-            <div class="time">
-              <span id="hour">00</span>: <span id="minutes">00</span>:
-              <span id="seconds">00</span>
-              <span id="period">AM</span>
-            </div>
-          </div>
-          <!--digital clock end-->
+
+
+
           <ul class="navbar-nav d-flex">
             <li class="nav-item mx-3">
-              <a class="nav-link zoom" href="#">
-                <i class="fa fa-clock-o text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  title="Time Zone" style="font-size: 26px"></i>
+              <div class="container-fluid">
+                <div class="alertIcon">
+                  <button onclick="myFunc()" class="btn alertButton mt-2" type="button">
+                    <i class="fa fa-exclamation-triangle" style="font-size: 20px"></i>
+                  </button>
+                </div>
+
+              </div>
+
+            </li>
+            <!--digital clock start-->
+            
+            <div class="datetime border border-dark">
+              <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="daynum">00</span>/
+                <span id="month">Month</span>/
+                <span id="year">Year</span>
+              </div>
+              <div class="time">
+                <span id="hour">00</span>: <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+              </div>
+            </div>
+            <!--digital clock end-->
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">
+                <i class="fa fa-clock-o zoom" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Time Zone"
+                  style="font-size: 26px"></i>
               </a>
             </li>
             <li class="nav-item dropdown dropstart mx-2">
-              <a class="nav-link dropdown-toggle zoom" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-user-circle text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  title="Profile" style="font-size: 25px"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa fa-user-circle zoom" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile"
+                  style="font-size: 25px"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
@@ -146,12 +166,12 @@
       </div>
     </nav>
   </div>
-  <hr />
 
 
 
   <!-- Alert/Warning msg -->
-  <div class="container-fluid parent">
+
+  <!-- <div class="container-fluid parent">
     <div class="alertIcon">
       <button onclick="myFunc()" class="btn alertButton ms-5" type="button">
         <i class="fa fa-exclamation-triangle" style="font-size: 25px"></i>
@@ -160,16 +180,17 @@
     <div class="alert alert-danger alertIcon" id="text" style="display: none; width: 800px">
       This is an alert message.
     </div>
-  </div>
-  <!-- <div class="container-fluid mt-3">
-    <div class="row table1-custom mx-3">
-      <div class="col-11 ms-3">
-        <h1 class="display-6 fw-bolder pt-2">CHARTS</h1>
-      </div>
-      
-    </div>
   </div> -->
-  
+
+  <!-- display: none;  -->
+  <div class="container-fluid">
+    <div class="row mx-3">
+      <div class="offset-md-6 col-md-6 col-sm-12 alert alert-danger my-3" id="text" style="display: none;">
+        This is an alert message.
+      </div>
+    </div>
+  </div>
+
   <!-- Collapsible table1 -->
   <div class="container-fluid my-3">
     <div class="row table1-custom mx-3">
@@ -229,7 +250,7 @@
 
     </div>
   </div>
-  <div class="container mt-2">
+  <div class="container mt-2 mb-5">
     <div class="row">
       <div class="col-lg-6 col-sm-12">
         <canvas id="myChart" style="width: 100%;"></canvas>
@@ -241,15 +262,13 @@
 
 
   </div>
-
-
+  <div class="footer">
+    <img class="" src="../images/NokiaLogo.jpg" alt="Nokia Logo">
+  </div>
+  
 
 </body>
 
-<footer>
-  <div class="pos-logo">
-    <img align="right" src="../images/NokiaLogo.jpg" alt="Nokia Logo">
-  </div>
-</footer>
+
 
 </html>
