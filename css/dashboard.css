@@ -29,6 +29,12 @@
   /* transition: all 0.3s ease 0s; */
 }
 
+.pos-logo {
+  position: fixed;  
+  top: 680px;  
+  right: 0px;
+}
+
 .parent {
   display: flex;
 }
