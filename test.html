@@ -7,31 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/dashboard.css">
-        <link rel="stylesheet" href="css/clock.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="js/dashboard.js"></script>
-        <script src="js/clock.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/dashboard.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-        <title>Test-Management</title>
+    <title>Test-Management</title>
 </head>
 
-<body onload="initClock()"> 
+<body onload="initClock()">
     <div class="container-fluid">
-        <nav class="navbar navbar-expand navbar-dark bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar-dark nav-bgcolor">
             <div class="container-fluid">
-                <a class="navbar-brand text-primary fw-bolder fs-2" href="index.html">NTAF</a>
+                <a class="navbar-brand fw-bolder fs-2" href="index.html">NTAF</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse nav-bgcolor py-2" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse py-2" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-3">
-                            <a class="nav-link zoom"  href="index.html">
+                            <a class="nav-link zoom" href="index.html">
 
                                 <i class="fa fa-line-chart text-white" data-bs-toggle="tooltip"
                                     data-bs-placement="bottom" title="Dashboard" style="font-size:25px;"></i>
@@ -71,9 +71,11 @@
 
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="configuration/uepc-config.html">UE PC Configuration</a></li>
-                                <li><a class="dropdown-item" href="configuration/test-config.html">Test Configuration</a></li>
-                                
+                                <li><a class="dropdown-item" href="configuration/uepc-config.html">UE PC
+                                        Configuration</a></li>
+                                <li><a class="dropdown-item" href="configuration/test-config.html">Test
+                                        Configuration</a></li>
+
                             </ul>
                         </li>
                         <li class="nav-item mx-3">
@@ -84,21 +86,21 @@
 
                             </a>
                         </li>
-                        
+
                     </ul>
-                             <!--digital clock start-->
+                    <!--digital clock start-->
                     <div class="datetime">
                         <div class="date">
-                        <span id="dayname">Day</span>,
-                        <span id="month">Month</span>
-                        <span id="daynum">00</span>,
-                        <span id="year">Year</span>
+                            <span id="dayname">Day</span>,
+                            <span id="month">Month</span>
+                            <span id="daynum">00</span>,
+                            <span id="year">Year</span>
                         </div>
                         <div class="time">
-                        <span id="hour">00</span>:
-                        <span id="minutes">00</span>:
-                        <span id="seconds">00</span>
-                        <span id="period">AM</span>
+                            <span id="hour">00</span>:
+                            <span id="minutes">00</span>:
+                            <span id="seconds">00</span>
+                            <span id="period">AM</span>
                         </div>
                     </div>
                     <!--digital clock end-->
@@ -135,22 +137,25 @@
         </nav>
     </div>
     <hr>
-    <div class="container text-center fs-2 fw-bolder">TEST MANAGEMENT</div>
-    
-    <div class="container border rounded border-dark" style="min-height: 300px;">
-        <div class="row mb-5">
-            <div class="offset-0 col-2">
-                <p>Select Job Name</p>
-                <input type="text" class="form-control">
-            </div>
-            <div class="col-3">
-                <i class="fa fa-plus mt-5"></i>
-                <i class="fa fa-trash mt-5 ms-2"></i>
+    <div class="container text-center">
+        <div class="container text-center fs-2 fw-bolder">TEST MANAGEMENT</div>
+
+        <div class="container border rounded border-dark" style="min-height: 300px;">
+            <div class="row mb-5">
+                <div class="offset-2 col-lg-4 col-5 text-center">
+                    <p>Select Job Name</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-lg-2 col-3">
+                    <i class="fa fa-plus mt-5"></i>
+                    <i class="fa fa-trash mt-5 ms-2"></i>
+                </div>
             </div>
         </div>
     </div>
-    
-    <div class="container mt-3">
+
+
+    <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-4 text-center">
                 <!-- <button class="btn btn-primary">Execute Test Cycle</button> -->

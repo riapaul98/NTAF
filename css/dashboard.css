@@ -12,7 +12,7 @@
 .zoom {
   transition: transform 0.2s; /* Animation */
   transform: scale(0.9);
-} 
+}
 
 .zoom:hover {
   transform: scale(1.2);
@@ -33,7 +33,7 @@
   display: flex;
 }
 
-#text{
+#text {
   overflow: hidden;
 }
 .alertIcon:last-child {
@@ -86,7 +86,7 @@
 
 .testButton {
   width: 220px;
-  height: 55px;
+  height: 48px;
   /* font-family: "Roboto", sans-serif; */
   font-size: 16px;
   letter-spacing: 2.5px;
@@ -116,7 +116,7 @@
   background-size: cover;
 } */
 
-.loginButton{
+.loginButton {
   width: 170px;
   height: 45px;
   /* font-family: "Roboto", sans-serif; */
@@ -154,17 +154,17 @@
   min-height: 350px;
 }
 
-.login-right-col{
+.login-right-col {
   position: relative;
   box-shadow: 0px 10px 18px #0d539167;
 }
-.login-left-col{
+.login-left-col {
   background: #184494;
   /* border-radius: 10px;
   box-shadow: 0px 15px 20px #0d539167; */
 }
-.login-left-col h1{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.login-left-col h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .login-right-cont {
   position: absolute;
@@ -177,22 +177,53 @@
   display: flex;
 }
 
-.card-robot-custom{
+.card-robot-custom {
   transition: all 0.3s ease 0s;
 }
 
-.card-robot-custom:hover{
+.card-robot-custom:hover {
   transform: scale(1.1);
   box-shadow: 0px 15px 20px #05488367;
   border: 1px solid #184494;
   z-index: 1; /* the gui status was getting on top of robot status on hover, so increased the z-index of robot status */
 }
-.card-gui-custom{
+.card-gui-custom {
   transition: all 0.3s ease 0s;
 }
 
-.card-gui-custom:hover{
+.card-gui-custom:hover {
   transform: scale(1.1);
   box-shadow: 0px 15px 20px #05488367;
   border: 1px solid #184494;
+}
+
+@media only screen and (max-width: 990px) {
+  .zoom:hover {
+    background-color: #184494;
+    transform: scale(0.9);
+  }
+  .current-page {
+    background-color: #184494;
+    transform: scale(0.9);
+  }
+  .testButton {
+    width: 160px;
+    height: 48px;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: 420;
+  }
+  .card-robot-custom{
+    transform: scale(0.9);
+  }
+  .card-robot-custom:hover {
+    transform: scale(1);
+    z-index: 1; /* the gui status was getting on top of robot status on hover, so increased the z-index of robot status */
+  }
+  .card-gui-custom{
+    transform: scale(0.9);
+  }
+  .card-gui-custom:hover {
+    transform: scale(1);
+  }
 }
