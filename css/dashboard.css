@@ -18,6 +18,18 @@
   /* background: #2576b4; */
 }
 
+.navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: 999;
+}
+
+.main {
+  margin-top: 100px;
+  margin-bottom: 30px;  
+}
+
 .table1-custom {
   background: rgb(201, 214, 248);
   /* background-color: #96e1f8; */
@@ -29,9 +41,11 @@
 .footer {
   
   position: fixed;
-  
-  top: 570px;
-  right: 0px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: right;
 }
 
 #text {
@@ -224,4 +238,18 @@
   .card-gui-custom:hover {
     transform: scale(1);
   }
+
+  .main {
+    margin-top: 75px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1125px) and (min-width: 991px) {
+ 
+  .main {
+    margin-top: 130px;
+  }
+
 }
