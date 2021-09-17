@@ -51,6 +51,25 @@
   overflow: hidden;
 }
 
+.nav-logo-top {
+
+  height:50px;
+  width: 100px;
+  padding-bottom: 8px; 
+  padding-right: 5px 
+
+}
+
+.nav-logo-taf {
+
+  line-height: 1px;
+  letter-spacing: 5px; 
+  margin-top: 0px; 
+  margin-bottom: 20px; 
+  color: rgba(255, 255, 255, 0.945);
+
+}
+
 .alertButton {
   /* width: 220px;
   height: 55px; */
@@ -276,6 +295,26 @@
   .datetime{
     display: none;
   }
+
+  .nav-logo-top {
+
+    height:50px;
+    width: 100px;
+    padding-bottom: 8px; 
+    padding-right: 5px 
+  
+  }
+  
+  .nav-logo-taf {
+    display: flex;
+    line-height: 1px;
+    letter-spacing: 5px; 
+    margin-top: 0px; 
+    margin-bottom: 20px; 
+    color: rgba(255, 255, 255, 0.945);
+  
+  }
+
 }
 
 @media only screen and (max-width: 1125px) and (min-width: 991px) {
