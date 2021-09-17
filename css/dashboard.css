@@ -172,6 +172,15 @@
   /* border: 1px solid #066cc0; */
   font-weight: 500;
 }
+.toggleRadio input:checked + label{
+  transform: scale(1);
+  color: rgb(27, 150, 11);
+  background-color: rgb(148, 255, 134);
+  /* border: 1px solid #066cc0; */
+  font-weight: 500;
+  box-shadow: 0px 15px 20px #22830567;
+}
+
 .login-main-container {
   position: absolute;
   left: 50%;
@@ -226,6 +235,14 @@
   transform: scale(1.1);
   box-shadow: 0px 15px 20px #05488367;
   border: 1px solid #184494;
+}
+.sutInput{
+  box-shadow: 0px 2px 5px #566c8067;
+  /* background: #d6ecf7; */
+}
+.sutInput input{
+  box-shadow: 0px 0px 5px #566c8067;
+  border: none;
 }
 
 @media only screen and (max-width: 990px) {
