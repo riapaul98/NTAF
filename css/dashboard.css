@@ -244,6 +244,29 @@
   box-shadow: 0px 0px 5px #566c8067;
   border: none;
 }
+.sut-button{
+  /* border:1px solid black; */
+  border-radius: 20px;
+  background: #066cc0;
+  color: white;
+  box-shadow: 0px 15px 20px #05488367;
+  transform: scale(0.9);
+  transition: all 0.3s ease 0s;
+  width: 100px;
+}
+.sut-button:hover{
+  background: white;
+  color: #066cc0;
+  transform: scale(1.0);
+}
+
+.sut-items{
+  background-color: rgb(215, 236, 255);
+}
+.sut-items li a{
+  color: rgba(32, 91, 253, 0.699);
+  font-weight: 600;
+}
 
 @media only screen and (max-width: 990px) {
   .zoom:hover {
