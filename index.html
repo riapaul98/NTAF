@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="js/dashboard.js"></script>
   <script src="js/clock.js"></script>
-  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
   <script src="../js/chart.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
   <title>Dashboard</title>
 </head>
 
@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark nav-bgcolor">
       <div class="container-fluid">
         <a class="navbar-brand fw-bolder" href="index.html">
-          <img src="images/NokiaLoginLogo.png" alt="" class ="nav-logo-top">
+          <img src="images/NokiaLoginLogo.png" alt="" class="nav-logo-top">
           <h4 class="ms-4 fs-5 fw-bold nav-logo-taf">TAF</h4>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -62,7 +62,7 @@
                   style="font-size: 25px"></i>
               </a>
               <p class="text-white" style="font-size: smaller;">Monitoring</p>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="monitoring/execution.html">Execution</a>
                 </li>
@@ -89,7 +89,7 @@
                   style="font-size: 25px"></i>
               </a>
               <p class="text-white" style="font-size: smaller;">Configuration</p>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="configuration/uepc-config.html">UE PC Configuration</a>
                 </li>
@@ -106,8 +106,8 @@
             </li>
             <li class="nav-item mx-3">
               <a class="nav-link" href="test-scheduler.html">
-                <i class="fa fa-recycle zoom" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  title="Validator" style="font-size: 25px"></i>
+                <i class="fa fa-recycle zoom" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Validator"
+                  style="font-size: 25px"></i>
               </a>
               <p class="text-white" style="font-size: smaller;">Validator</p>
             </li>
@@ -128,7 +128,7 @@
 
             </li>
             <!--digital clock start-->
-            
+
             <div class="datetime">
               <div class="date">
                 <span id="dayname">Day</span>,
@@ -155,7 +155,7 @@
                 <i class="fa fa-user-circle zoom" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile"
                   style="font-size: 25px"></i>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="profile/user.html">User Settings</a>
                 </li>
@@ -177,11 +177,11 @@
     </nav>
   </div>
 
-<div class="main">
+  <div class="main">
 
-  <!-- Alert/Warning msg -->
+    <!-- Alert/Warning msg -->
 
-  <!-- <div class="container-fluid parent">
+    <!-- <div class="container-fluid parent">
     <div class="alertIcon">
       <button onclick="myFunc()" class="btn alertButton ms-5" type="button">
         <i class="fa fa-exclamation-triangle" style="font-size: 25px"></i>
@@ -192,112 +192,107 @@
     </div>
   </div> -->
 
-  <!-- display: none;  -->
-  <div class="container-fluid">
-    <div class="row mx-3">
-      <div class="offset-md-6 col-md-6 col-sm-12 alert alert-danger my-3" id="text" style="display: none;">
-        This is an alert message.
+    <!-- display: none;  -->
+    <div class="container-fluid">
+      <div class="row mx-3">
+        <div class="offset-md-6 col-md-6 col-sm-12 alert alert-danger my-3" id="text" style="display: none;">
+          This is an alert message.
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Collapsible table1 -->
-  <div class="container-fluid my-3">
-    <div class="row table1-custom mx-3">
-      <div class="col-10 col-lg-11">
-        <h1 class="display-6 fw-bolder pt-2">STATUS</h1>
-      </div>
-      <!-- col-lg-11 col-md-9 col-sm-10 -->
-      <!-- col-lg-1 col-md-3 col-sm-2  -->
-      <div class="col-2 col-lg-1">
-        <p>
-          <i class="fa fa-chevron-down py-1 px-2 mt-3 expandButton" data-bs-toggle="collapse"
-            data-bs-target="#collapseTable1Example" aria-expanded="false" aria-controls="collapseTable1Example"
-            style="font-size: 25px"></i>
-        </p>
+    <!-- Collapsible table1 -->
+    <div class="container-fluid my-3">
+      <div class="row table1-custom mx-3">
+        <div class="col-10 col-lg-11">
+          <h1 class="pt-2">STATUS</h1>
+        </div>
+        <!-- col-lg-11 col-md-9 col-sm-10 -->
+        <!-- col-lg-1 col-md-3 col-sm-2  -->
+        <div class="col-2 col-lg-1">
+          <p>
+            <i class="fa fa-chevron-down py-1 px-2 mt-3 expandButton" data-bs-toggle="collapse"
+              data-bs-target="#collapseTable1Example" aria-expanded="false" aria-controls="collapseTable1Example"
+              style="font-size: 25px"></i>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="collapse mx-3" id="collapseTable1Example">
-    <table class="table table-primary table-hover">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Start Time</th>
-          <th scope="col">Job Name</th>
-          <th scope="col">Build No</th>
-          <th scope="col">Status</th>
-          <th scope="col">Total</th>
-          <th scope="col">Pass</th>
-          <th scope="col">Fail</th>
-          <th scope="col">Reports</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>09/09/2021</td>
-          <td>Test1</td>
-          <td>18-1.0.1</td>
-          <td>@mdo</td>
-          <td>4</td>
-          <td>3</td>
-          <td>1</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>09/09/2021</td>
-          <td>Test1</td>
-          <td>18-1.0.1</td>
-          <td>@mdo</td>
-          <td>5</td>
-          <td>2</td>
-          <td>3</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>09/09/2021</td>
-          <td>Test1</td>
-          <td>@mdo</td>
-          <td>6</td>
-          <td>5</td>
-          <td>1</td>
-          <td>@mdo</td>
-          <td>@mdo</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-
-  <!-- CHARTS TABLE -->
-  <div class="container-fluid mt-3">
-    <div class="row table1-custom mx-3">
-      <div class="col">
-        <h1 class="display-6 fw-bolder pt-2">CHARTS</h1>
-      </div>
-
-    </div>
-  </div>
-  <div class="container mt-2 mb-5">
-    <div class="row mt-3">
-      <div class="col-12">
-        <!-- <canvas id="myChart" style="width: 100%;"></canvas> -->
-        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-      </div>
-      <!-- <div class="col-lg-6 col-sm-12">
-        <canvas id="myChart2" style="width:100%;"></canvas>
-      </div> -->
+    <div class="collapse mx-3" id="collapseTable1Example">
+      <table class="table table-primary table-hover text-center">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Start Time</th>
+            <th scope="col">Job Name</th>
+            <th scope="col">Build No</th>
+            <th scope="col">Status</th>
+            <th scope="col">Total</th>
+            <th scope="col">Pass</th>
+            <th scope="col">Fail</th>
+            <th scope="col">Reports</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>09/09/2021</td>
+            <td>Test1</td>
+            <td>18-1.0.1</td>
+            <td>@mdo</td>
+            <td>4</td>
+            <td>3</td>
+            <td>1</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>09/09/2021</td>
+            <td>Test1</td>
+            <td>18-1.0.1</td>
+            <td>@mdo</td>
+            <td>5</td>
+            <td>2</td>
+            <td>3</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>09/09/2021</td>
+            <td>Test1</td>
+            <td>@mdo</td>
+            <td>6</td>
+            <td>5</td>
+            <td>1</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
 
-  </div>
-  <!-- <div class="footer">
-    <img class="" src="../images/NokiaLogoTrans.png" alt="Nokia Logo">
-  </div> -->
-  
+    <!-- CHARTS TABLE -->
+    <div class="container-fluid mt-3">
+      <div class="row table1-custom mx-3">
+        <div class="col">
+          <h1 class="pt-2">CHARTS</h1>
+        </div>
+
+      </div>
+    </div>
+    <div class="container mt-2 mb-5">
+      <div class="row mt-3">
+        <div class="col-12">
+          <div id="chart_div" style="width: 100%; height: 350px;"></div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
 
 </body>
 

@@ -21,7 +21,7 @@
     <title>Status</title>
 </head>
 
-<body onload="initClock();myFunc2()">
+<body onload="initClock();myFunc1()">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark nav-bgcolor">
             <div class="container-fluid">
@@ -59,7 +59,7 @@
                                 <i class="fa fa-desktop current-page" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Monitoring</p>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="../monitoring/execution.html">Execution</a></li>
                                 <li><a class="dropdown-item" href="../monitoring/logs.html">Logs</a></li>
                                 <li><a class="dropdown-item" href="../monitoring/robot-status.html">Status</a>
@@ -75,7 +75,7 @@
                                 <i class="fa fa-cog zoom" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Configuration</p>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="../configuration/uepc-config.html">UE PC
                                         Configuration</a></li>
                                 <li><a class="dropdown-item" href="../configuration/test-config.html">Test
@@ -90,7 +90,7 @@
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="../test-scheduler.html">
-                                <i class="fa fa-sliders zoom" style="font-size: 25px"></i>
+                                <i class="fa fa-recycle zoom" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Validator</p>
                         </li>
@@ -138,7 +138,7 @@
                                 <i class="fa fa-user-circle zoom" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                     title="Profile" style="font-size: 25px"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li>
                                     <a class="dropdown-item" href="../profile/user.html">User Settings</a>
                                 </li>
@@ -197,13 +197,13 @@
         </div>
         
     </div> -->
-        <div class="container my-2">
+        <div class="container-fluid my-2">
             <div class="table1-custom">
-                <h1 class="display-5 ps-3">STATUS</h1>
+                <h1 class="ps-3">STATUS</h1>
             </div>
             <div class="row g-3 mt-1">
                 <div class="col-lg-6 col-md-12">
-                    <div class="card card-robot-custom">
+                    <div class="card card-robotgui-custom">
                         <div class="card-body">
                             <h5 class="card-title">ROBOT STATUS</h5>
                         </div>
@@ -211,7 +211,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <div class="card card-gui-custom">
+                    <div class="card card-robotgui-custom">
                         <div class="card-body">
                             <h5 class="card-title">GUI STATUS</h5>
                         </div>

@@ -15,14 +15,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
-    <title>UEPC Configuration</title>
+    <title>Wireshark Configuration</title>
 </head>
 
 <body onload="initClock()">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark nav-bgcolor">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bolder fs-3" href="index.html">
+                <a class="navbar-brand fw-bolder fs-3" href="../index.html">
                     <img src="../images/NokiaLoginLogo.png" alt="" class="nav-logo-top">
                     <h4 class="ms-4 fs-5 fw-bold nav-logo-taf">TAF</h4>
                 </a>
@@ -56,7 +56,7 @@
                                 <i class="fa fa-desktop zoom" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Monitoring</p>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="../monitoring/execution.html">Execution</a></li>
                                 <li><a class="dropdown-item" href="../monitoring/logs.html">Logs</a></li>
                                 <li><a class="dropdown-item" href="../monitoring/robot-status.html">Status</a>
@@ -72,22 +72,24 @@
                                 <i class="fa fa-cog current-page" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Configuration</p>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="../configuration/uepc-config.html">UE PC
                                         Configuration</a></li>
                                 <li><a class="dropdown-item" href="../configuration/test-config.html">Test
                                         Configuration</a></li>
-                                        <li>
-                                            <a class="dropdown-item" href="../configuration/sut-config.html">SUT Configuration</a>
-                                          </li>
-                                          <li>
-                                            <a class="dropdown-item" href="../configuration/wireshark-config.html">Wireshark Configuration</a>
-                                          </li>
+                                <li>
+                                    <a class="dropdown-item" href="../configuration/sut-config.html">SUT
+                                        Configuration</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../configuration/wireshark-config.html">Wireshark
+                                        Configuration</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="../test-scheduler.html">
-                                <i class="fa fa-sliders zoom" style="font-size: 25px"></i>
+                                <i class="fa fa-recycle zoom" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Validator</p>
                         </li>
@@ -135,7 +137,7 @@
                                 <i class="fa fa-user-circle zoom" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                     title="Profile" style="font-size: 25px"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li>
                                     <a class="dropdown-item" href="../profile/user.html">User Settings</a>
                                 </li>
@@ -182,68 +184,69 @@
         </div>
 
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-3 text-center border-end border-bottom">
-                    <h1 class="display-6 border-bottom">UE Configuration</h1>
-                    <div class="row mb-5">
-                        <div class="offset-1 col-8">
-                            <p>SELECT UE PC NAME</p>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-3">
-                            <i class="fa fa-plus mt-5"></i>
-                            <i class="fa fa-trash mt-5 ms-2"></i>
+            <div class="container text-center fs-2 border-bottom">Wireshark CONFIG</div>
+            <div class="container-fluid mt-4">
+                <div class="row">
+                    <div class="col-md-1 col-sm-12">
+                        <div class="dropdown ms-4">
+                            <button class="btn wire-button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Wireshark
+                            </button>
+                            <ul class="dropdown-menu mt-1 sut-items" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item border-bottom" href="#">CMM</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">CMG</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">NTAS</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other1</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other2</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other3</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other4</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other5</a></li>
+                                <li><a class="dropdown-item" href="#">other6</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row mb-5">
-                        <div class="offset-1 col-8">
-                            <input type="text" class="form-control text-center" placeholder="Enter YML Name">
-                        </div>
-                    </div>
-                    <div class="row mb-5">
-                        <div class="offset-1 col-8">
-                            <input type="text" class="form-control text-center" placeholder="Select Test Name">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-9">
-                    <div class="container text-center fs-2 border-bottom">SUT CONFIG</div>
-                    <div class="container-fluid">
-                        <div class="row text-center my-5">
-                            <div class="col-3">
-                                <p>SUT Name</p>
-                                <input type="text" class="form-control">
+                    <div class="offset-md-1 col-md-10 col-sm-12">
+                        <div class="container mt-3 sutInput">
+                            <div class="row text-center pt-3 my-3 fw-bold">
+                                <div class="col-4">
+                                    <p>Wireshark Name</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <p>Wireshark IP</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <p>Wireshark SSH PORT</p>
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
-                            <div class="col-3">
-                                <p>SUT IP</p>
-                                <input type="text" class="form-control">
+                            <div class="row text-center my-3 fw-bold">
+                                <div class="col-4">
+                                    <p>Wireshark SSH Username</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <p>Wireshark SSH Password</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <p>Wireshark SSH Key</p>
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
-                            <div class="col-3">
-                                <p>SUT SSH PORT</p>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-3">
-                                <p>SUT SSH Username</p>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row text-center mt-3">
-                            <div class="col-4">
-                                <p>SUT SSH Password</p>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-4">
-                                <p>SUT SSH Key</p>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-4">
-                                <p>SUT CLI PORT</p>
-                                <input type="text" class="form-control">
+                            <div class="row text-center my-3 pb-4 fw-bold">
+                                <div class="offset-4 col-4">
+                                    <p>Wireshark CLI PORT</p>
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <!-- <div class="footer">
             <img class="" src="../images/NokiaLogo.jpg" alt="Nokia Logo">

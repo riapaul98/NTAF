@@ -22,8 +22,8 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark nav-bgcolor">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bolder fs-3" href="index.html">
-                    <img src="../images/NokiaLoginLogo.png" alt="" class ="nav-logo-top">
+                <a class="navbar-brand fw-bolder fs-3" href="../index.html">
+                    <img src="../images/NokiaLoginLogo.png" alt="" class="nav-logo-top">
                     <h4 class="ms-4 fs-5 fw-bold nav-logo-taf">TAF</h4>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -56,7 +56,7 @@
                                 <i class="fa fa-desktop current-page" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Monitoring</p>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="../monitoring/execution.html">Execution</a></li>
                                 <li><a class="dropdown-item" href="../monitoring/logs.html">Logs</a></li>
                                 <li><a class="dropdown-item" href="../monitoring/robot-status.html">Status</a>
@@ -72,22 +72,24 @@
                                 <i class="fa fa-cog zoom" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Configuration</p>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="../configuration/uepc-config.html">UE PC
                                         Configuration</a></li>
                                 <li><a class="dropdown-item" href="../configuration/test-config.html">Test
                                         Configuration</a></li>
-                                        <li>
-                                            <a class="dropdown-item" href="../configuration/sut-config.html">SUT Configuration</a>
-                                          </li>
-                                          <li>
-                                            <a class="dropdown-item" href="../configuration/wireshark-config.html">Wireshark Configuration</a>
-                                          </li>
+                                <li>
+                                    <a class="dropdown-item" href="../configuration/sut-config.html">SUT
+                                        Configuration</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../configuration/wireshark-config.html">Wireshark
+                                        Configuration</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="../test-scheduler.html">
-                                <i class="fa fa-sliders zoom" style="font-size: 25px"></i>
+                                <i class="fa fa-recycle zoom" style="font-size: 25px"></i>
                             </a>
                             <p class="text-white" style="font-size: smaller;">Validator</p>
                         </li>
@@ -135,7 +137,7 @@
                                 <i class="fa fa-user-circle zoom" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                     title="Profile" style="font-size: 25px"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu text-center navItems" aria-labelledby="navbarDropdown">
                                 <li>
                                     <a class="dropdown-item" href="../profile/user.html">User Settings</a>
                                 </li>
@@ -183,19 +185,26 @@
         <div class="container-fluid mt-3">
             <div class="row table1-custom mx-2">
                 <div class="col">
-                    <h1 class="display-6 fw-bolder pt-2">LOGS</h1>
+                    <h1 class="pt-2">LOGS</h1>
                 </div>
 
             </div>
         </div>
         <div class="mt-3 mx-3">
-            <table class="container-fluid table table-primary table-hover">
+            <table class="container-fluid table table-primary table-hover text-center">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Session ID</th>
+                        <th scope="col">Job Name</th>
+                        <th scope="col">Build No</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Pass</th>
+                        <th scope="col">Fail</th>
+                        <th scope="col">Execution Time</th>
+                        <th scope="col">Started Time</th>
+                        <th scope="col">End Time</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -204,17 +213,40 @@
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
                         <td>@fat</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
+                        <!-- <td colspan="2">Larry the Bird</td> -->
+                        <td>Otto</td>
+                        <td>Otto</td>
                         <td>@twitter</td>
+                        <td>@fat</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
                     </tr>
                 </tbody>
             </table>
