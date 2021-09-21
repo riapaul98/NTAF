@@ -77,13 +77,19 @@
                                         Configuration</a></li>
                                 <li><a class="dropdown-item" href="../configuration/test-config.html">Test
                                         Configuration</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="../configuration/sut-config.html">SUT Configuration</a>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="../configuration/wireshark-config.html">Wireshark Configuration</a>
+                                          </li>
                             </ul>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="../test-scheduler.html">
-                                <i class="fa fa-sliders zoom" style="font-size: 25px"></i>
+                                <i class="fa fa-recycle zoom" style="font-size: 25px"></i>
                             </a>
-                            <p class="text-white" style="font-size: smaller;">Test Case Handler</p>
+                            <p class="text-white" style="font-size: smaller;">Validator</p>
                         </li>
                     </ul>
 
@@ -177,8 +183,8 @@
 
         <div class="container-fluid">
             <div class="container text-center fs-2 border-bottom">SUT CONFIG</div>
-            <div class="container-fluid">
-                <div class="row text-center my-4">
+            <div class="container-fluid mt-4">
+                <!-- <div class="row text-center my-4">
                     <div class="offset-md-3 col-md-2 col-sm-12 mb-3 toggleRadio">
                         <input type="radio" class="btn-check" name="options-outlined" id="radio-one"
                             autocomplete="off" checked>
@@ -194,44 +200,68 @@
                             autocomplete="off">
                         <label class="btn loginButton" for="radio-three">NTAS</label>
                     </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-md-1 col-sm-12">
+                        <div class="dropdown ms-4">
+                            <button class="btn sut-button dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SUT
+                            </button>
+                            <ul class="dropdown-menu mt-1 sut-items" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item border-bottom" href="#">CMM</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">CMG</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">NTAS</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other1</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other2</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other3</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other4</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#">other5</a></li>
+                                <li><a class="dropdown-item" href="#">other6</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-10 col-sm-12">
+                        <div class="container mt-3 sutInput">
+                            <div class="row text-center pt-3 my-3 fw-bold">
+                                <div class="col-4">
+                                    <p>SUT Name</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <p>SUT IP</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <p>SUT SSH PORT</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row text-center my-3 fw-bold">
+                                <div class="col-4">
+                                    <p>SUT SSH Username</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <p>SUT SSH Password</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-4">
+                                    <p>SUT SSH Key</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row text-center my-3 pb-4 fw-bold">
+                                <div class="offset-4 col-4">
+                                    <p>SUT CLI PORT</p>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container mt-3 sutInput">
-                <div class="row text-center pt-3 my-3 fw-bold">
-                    <div class="col-4">
-                        <p>SUT Name</p>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-4">
-                        <p>SUT IP</p>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-4">
-                        <p>SUT SSH PORT</p>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="row text-center my-3 fw-bold">
-                    <div class="col-4">
-                        <p>SUT SSH Username</p>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-4">
-                        <p>SUT SSH Password</p>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="col-4">
-                        <p>SUT SSH Key</p>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="row text-center my-3 pb-4 fw-bold">
-                    <div class="offset-4 col-4">
-                        <p>SUT CLI PORT</p>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     </div>
